@@ -33,11 +33,13 @@
   font-family: "sohne";
   src: url(/static/soehne-halbfett.woff2);
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: "sohne";
   src: url(/static/soehne-buch.woff2);
   font-weight: normal;
+  font-display: swap;
 }
 
 * {
@@ -304,7 +306,7 @@ section {
 
 .video-hero {
   overflow: hidden;
-  width: 80%;
+  width: 60%;
   z-index: 0;
 }
 
@@ -608,7 +610,7 @@ footer {
   }
   .video-hero {
     overflow: hidden;
-    width: 80%;
+    width: 65%;
     z-index: 0;
   }
 
