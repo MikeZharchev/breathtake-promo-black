@@ -326,15 +326,13 @@ section {
   height: 6.4rem;
   font-size: 2rem;
   border-radius: 1.2rem;
-  -webkit-border-radius: 1.2
-  outline: unset;
+  -webkit-border-radius: 1.2;
   color: var(--bgc);
   /* border: 1px solid var(--bgc); */
   border: unset;
   padding: 0 2.4rem;
   background: var(--transparent-white);
   transition: all 0.3s ease-in-out;
-  /* outline: 0 solid rgba(255, 255, 255, 0.05); */
   outline: 0 solid var(--transparent-white);
 }
 .email-input:hover {
@@ -544,7 +542,7 @@ footer {
   }
 
   .video-html {
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     overflow: hidden;
     width: 100%;
   }
@@ -559,7 +557,10 @@ footer {
     outline: unset;
   }
   .email-input:focus {
-
+    outline: unset;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .email-input:hover {
     outline: unset;
   }
   .footer_links {
