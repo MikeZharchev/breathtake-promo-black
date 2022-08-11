@@ -489,15 +489,15 @@ footer {
   h2 {
     width: 100%;
     line-height: 120%;
-    font-size: 9vw;
-    text-align: left;
+    font-size: 10vw;
+    /* text-align: left; */
   }
 
   p {
     font-size: 4vw;
     line-height: 150%;
     margin-top: 0.8rem;
-    text-align: left;
+    /* text-align: left; */
   }
 
   header {
@@ -561,6 +561,10 @@ footer {
     background-color: rgba(255, 255, 255, 0.2);
   }
   .email-input:hover {
+    outline: unset;
+  }
+
+  .btn--cta:hover {
     outline: unset;
   }
   .footer_links {
