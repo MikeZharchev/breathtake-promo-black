@@ -556,6 +556,7 @@ footer {
 
   .email-input {
     width: 100%;
+    -webkit-border-radius: 1.2;
   }
   .footer_links {
     font-size: 2rem;
