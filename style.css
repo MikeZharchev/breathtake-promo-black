@@ -500,6 +500,10 @@ footer {
     margin-top: 0.8rem;
     text-align: left;
   }
+
+  header {
+    padding: 0 2.4rem;
+  }
   .wrapper {
     width: 100%;
   }
@@ -507,11 +511,12 @@ footer {
     margin-bottom: 2rem;
   }
   section {
-    padding: 8rem 4rem;
+    padding: 4rem 2.4rem;
   }
   .section--hero {
-    height: 100vh;
+    height: auto;
     min-height: 50rem;
+    padding: 0.8rem 2.4rem;
   }
 
   .hero-clip-container {
@@ -521,9 +526,19 @@ footer {
   .section--cta {
     height: auto;
   }
+
+  .hero-clip-container {
+    position: relative;
+    height: auto;
+  }
+  .video-wrapper-hero {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
   .video-hero {
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     z-index: 0;
   }
 
@@ -575,7 +590,12 @@ footer {
     gap: 0;
   }
   .image-device {
-    min-width: 100% !important;
+    min-width: 110% !important;
+  }
+
+  .warning {
+    text-align: center;
+    bottom: -4rem;
   }
 }
 
