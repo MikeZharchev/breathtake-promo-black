@@ -471,6 +471,14 @@ footer {
     /* text-align: left; */
   }
 
+  .h1--desktop {
+    display: none;
+  }
+
+  .h1--mobile {
+    display: inline-block;
+  }
+
   p {
     font-size: 4vw;
     line-height: 150%;
@@ -601,6 +609,14 @@ footer {
   h1,
   h2 {
     font-size: 7.2vw;
+  }
+
+  .h1--desktop {
+    display: inline-block;
+  }
+
+  .h1--mobile {
+    display: none;
   }
   p {
     font-size: 3.2vw;
