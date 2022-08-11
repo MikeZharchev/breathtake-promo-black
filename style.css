@@ -556,6 +556,20 @@ footer {
     gap: 0;
   }
 
+  #mc_embed_signup {
+    width: 100%;
+  }
+
+  .btn--submit {
+    width: 100%;
+  }
+
+  .mc-form-wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .email-input {
     width: 100%;
     outline: unset;
