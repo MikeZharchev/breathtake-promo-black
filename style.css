@@ -514,6 +514,10 @@ footer {
     min-height: 50rem;
   }
 
+  .hero-clip-container {
+    clip: unset;
+  }
+
   .section--cta {
     height: auto;
   }
