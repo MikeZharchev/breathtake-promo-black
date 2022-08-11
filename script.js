@@ -23,7 +23,7 @@ const logoLink = document.querySelector(".logo-link");
 const headerCta = document.querySelector(".btn--header");
 const anchorBtns = document.querySelectorAll(".btn--anchor");
 
-emailInput.focus();
+// emailInput.focus();
 
 // STICKY NAV
 
