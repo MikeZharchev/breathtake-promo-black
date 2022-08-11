@@ -510,7 +510,7 @@ footer {
     padding: 8rem 4rem;
   }
   .section--hero {
-    height: 74vh;
+    height: 100vh;
     min-height: 50rem;
   }
 
@@ -523,7 +523,7 @@ footer {
   }
   .video-hero {
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     z-index: 0;
   }
 
@@ -605,14 +605,14 @@ footer {
   }
   .video-hero {
     overflow: hidden;
-    width: 65%;
+    max-width: 100%;
     z-index: 0;
   }
 
   .video-html {
     border-radius: 1.2rem;
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
   }
 }
 
