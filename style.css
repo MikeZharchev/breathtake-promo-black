@@ -456,6 +456,23 @@ footer {
   color: var(--dark-grey);
 }
 
+.mc-form-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+#mce-success-response {
+  background-color: var(--brand-color);
+  color: var(--pitch-black);
+  padding: 2rem 1.6rem;
+  border-radius: 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
 /*///////////// MEDIA QUERIES ////////////*/
 /*///////////// MEDIA QUERIES ////////////*/
 /*///////////// MEDIA QUERIES ////////////*/
