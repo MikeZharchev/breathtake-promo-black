@@ -556,7 +556,11 @@ footer {
 
   .email-input {
     width: 100%;
-    -webkit-border-radius: 1.2;
+    outline: unset;
+  }
+  .email-input:focus {
+
+    outline: unset;
   }
   .footer_links {
     font-size: 2rem;
