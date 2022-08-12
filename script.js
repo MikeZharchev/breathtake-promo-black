@@ -32,11 +32,9 @@ const stickyHeader = function (entries) {
   if (!entry.isIntersecting) {
     header.classList.add("header-sticky");
     headerPlaceholder.classList.remove("hidden");
-    console.log("if");
   } else {
     headerPlaceholder.classList.add("hidden");
     header.classList.remove("header-sticky");
-    console.log("else");
   }
 };
 
@@ -55,8 +53,6 @@ const options = {
   loop: true,
   startDelay: 1000,
   backDelay: 1000,
-
-  //   smartBackspace: true,
 };
 
 const typed = new Typed(".typed", options);
@@ -65,10 +61,9 @@ const typed = new Typed(".typed", options);
 // Event listeners
 anchorBtns.forEach((element) => {
   element.addEventListener("click", () => {
-    sectionCta.scrollIntoView({ behavior: "smooth", block: "end" });
-    console.log("clicked");
+    sectionHero.scrollIntoView({ behavior: "smooth", block: "end" });
     setTimeout(() => {
-      emailInputBottom.focus();
+      emailInput.focus();
     }, 1000);
   });
 });
@@ -94,20 +89,24 @@ anchor4.addEventListener("click", () => {
 
 // Mailchimp message customization
 
-// // select the target node
-// var target = document.getElementById("mce-success-response");
+// select the target node
+const target = document.getElementById("mce-success-response");
+const validateFrame = document.querySelector(".validate");
+const formWrapper = document.querySelector(".mc-form-wrapper");
 
-// // create an observer instance
-// var observer3 = new MutationObserver(function (mutations) {
-//   mutations.forEach(function (mutation) {
-//     if (target.innerHTML === "Thank you for subscribing!") {
-//       target.innerHTML = "Thank you! Go check your inbox!";
-//     }
-//   });
-// });
+// create an observer instance
+var observer3 = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    if (target.innerHTML === "Thank you for subscribing!") {
+      target.innerHTML = "Thank you! Go check your inbox!";
+      formWrapper.classList.add("hidden");
+      validateFrame.classList.add("hidden");
+    }
+  });
+});
 
-// // configuration of the observer:
-// var config = { attributes: true, childList: true, characterData: true };
+// configuration of the observer:
+var config = { attributes: true, childList: true, characterData: true };
 
-// // pass in the target node, as well as the observer options
-// observer3.observe(target, config);
+// pass in the target node, as well as the observer options
+observer3.observe(target, config);
